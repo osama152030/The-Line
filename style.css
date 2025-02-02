@@ -375,7 +375,7 @@
             position: relative;
             text-align: center;
             padding: 60px 20px;
-            background: url('../images/bg.jpg') no-repeat center center;
+            background: url('./myProject/images/bg.jpg') no-repeat center center;
             background-size: cover;
             color: white;
         }
