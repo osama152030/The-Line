@@ -13,7 +13,7 @@
             width: 100%;
             height: 500px;
             /* زيادة الارتفاع لتغطية مساحة أكبر */
-            background: url('../images/cover2.jpg') no-repeat center center;
+            background: url('./myProject/images/cover2.jpg') no-repeat center center;
             background-size: cover;
             position: relative;
             display: flex;
