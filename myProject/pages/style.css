@@ -1,0 +1,434 @@
+        /* إعداد الخطوط وتنسيق الصفحة */
+        body {
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: right;
+            background-color: #f4f4f4;
+        }
+
+        /* تصميم الهيدر مع صورة خلفية */
+        header {
+            width: 100%;
+            height: 500px;
+            /* زيادة الارتفاع لتغطية مساحة أكبر */
+            background: url('../images/cover2.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* تظليل لتحسين وضوح النص */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            /* زيادة التعتيم لجعل النص أكثر وضوحًا */
+            z-index: 1;
+        }
+
+        /* ضمان ظهور النص فوق التظليل */
+        .header-container {
+            position: relative;
+            z-index: 2;
+            color: white;
+            width: 90%;
+            text-align: center;
+        }
+
+        /* تحسين مظهر النص في الهيدر */
+        h1 {
+            font-size: 45px;
+            /* تكبير العنوان */
+            font-weight: bold;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+            /* تحسين وضوح النص */
+            margin-bottom: 15px;
+        }
+
+        /* تنسيق قائمة التنقل */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* تنسيق عناصر القائمة */
+        nav ul li {
+            display: inline;
+        }
+
+        /* تنسيق الروابط */
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* تحسين مظهر الروابط عند التمرير */
+        nav ul li a:hover {
+            color: #FFD700;
+            /* تأثير ذهبي عند المرور */
+        }
+
+        /* تحسين الهيدر للأجهزة الصغيرة */
+        @media screen and (max-width: 768px) {
+            header {
+                height: 350px;
+                /* تقليل الارتفاع للشاشات الصغيرة */
+            }
+
+            h1 {
+                font-size: 35px;
+                /* تصغير العنوان */
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul li {
+                display: block;
+            }
+        }
+
+        /* تصميم الهيدر مع صورة خلفية */
+        header {
+            width: 100%;
+            height: 600px;
+            /* ارتفاع الهيدر */
+            background: url('../images/cover2.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+            /* لتوفير مساحة بين الهيدر والنص */
+        }
+
+        /* تظليل لتحسين وضوح النص */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            /* تخفيف التعتيم */
+            z-index: 1;
+        }
+
+        /* ضمان ظهور النص فوق التظليل */
+        .header-container {
+            position: relative;
+            z-index: 2;
+            color: white;
+            width: 90%;
+            text-align: center;
+        }
+
+        /* تحسين مظهر العنوان */
+        h1 {
+            font-size: 45px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            margin-bottom: 20px;
+        }
+
+        /* تحريك القائمة للأعلى */
+        nav {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            /* خلفية شفافة */
+            padding: 10px 20px;
+            border-radius: 10px;
+            z-index: 3;
+        }
+
+        /* تنسيق القائمة */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* تنسيق عناصر القائمة */
+        nav ul li {
+            display: inline;
+        }
+
+        /* تنسيق الروابط */
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* تأثير عند تمرير الماوس */
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* تحسين استجابة القائمة للجوال */
+        @media screen and (max-width: 768px) {
+            header {
+                height: 450px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            nav {
+                top: 5px;
+                padding: 5px 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+
+
+
+
+        /* الأقسام */
+        section {
+            padding: 30px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        #about {
+            background-color: #e0f7fa;
+        }
+
+        #features {
+            background-color: #ffebcd;
+        }
+
+        /* Background color */
+        #gallery {
+            background-color: #e6e6fa;
+            text-align: center;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Container for images */
+        .gallery-container {
+            position: relative;
+            max-width: 80%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Slider */
+        .gallery-slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* Slides */
+        .gallery-slides {
+            display: flex;
+            width: 500%;
+            /* Allow for multiple images */
+        }
+
+        /* Image Styling */
+        .gallery-slides img {
+            width: 100%;
+            height: 400px;
+            /* Fixed height */
+            object-fit: cover;
+            flex: 0 0 100%;
+            border-radius: 10px;
+        }
+
+        /* Navigation Buttons */
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 20px;
+            z-index: 10;
+        }
+
+        /* Button Positions */
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        /* تذييل الصفحة */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* تأثير تحريك الصور عند التمرير */
+        .image-slider {
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+        }
+
+        .image-slider img {
+            width: 400px;
+            height: auto;
+            margin: 0 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-slider img:hover {
+            transform: scale(1.1);
+        }
+
+        /* تصميم المربعات */
+        .vision-box {
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        /* تكبير المربع عند التمرير */
+        .vision-box:hover {
+            transform: scale(1.1);
+        }
+
+        /* تنسيق الأيقونات */
+        .vision-box img {
+            width: 60px;
+            margin-bottom: 15px;
+        }
+
+        /* تنسيق رابط "قراءة المزيد" */
+        .read-more {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            text-decoration: underline;
+            color: #f1c40f;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .read-more:hover {
+            color: #ffcc00;
+        }
+
+        #features {
+            position: relative;
+            text-align: center;
+            padding: 60px 20px;
+            background: url('../images/bg.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+        }
+
+        /* ترتيب الصناديق في شبكة */
+        .features-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* تصميم الصناديق */
+        .feature-box {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* إضافة تأثير زجاجي */
+        .feature-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            /* تظليل */
+            backdrop-filter: blur(5px);
+            z-index: 1;
+        }
+
+        /* ضمان وضوح النصوص */
+        .feature-box h3,
+        .feature-box p,
+        .feature-box .fact {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* تأثير عند تمرير الماوس */
+        .feature-box:hover {
+            transform: scale(1.05);
+        }
